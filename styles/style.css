@@ -47,17 +47,17 @@ ol {
 }
 
 .result {
-display: flex;
-align-self: flex-end;
+  display: flex;
+  align-self: flex-end;
 }
 
 .content__details{
-inline-size: 100%;
+  inline-size: 100%;
 }
 
 .search-form{
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .content__list-container{
@@ -67,12 +67,100 @@ align-items: center;
 
 .result__video-container{
   position: relative;
-  inline-size: 800px;
+  inline-size: 711px;
   padding-bottom: 11px;
 }
 
+.result__video{
+  object-fit: cover;
+  block-size: 386px;
+  inline-size: 100%;
+}
+
+.content__details{
+  inline-size: 100%;
+  block-size: 100%;
+}
+
 .content__list-item{
+  padding-block-end: 32px;
+}
+
+.content__list{
+  position: relative;
+  max-block-size: 298px;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail{
+  object-fit: cover;
+  object-position: center;
+  inline-size: 194px;
+  block-size: 103px;
+}
+
+.content__video-card-description-container{
   display: flex;
+  flex-grow: 3;
+}
+
+.content__video-card-description{
+  line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.title {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 93%;
+  padding-block-end: 23px;
+}
+
+.content__accent{
+  position: relative;
+  color: #545050;
+}
+
+.content__card-link{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-block-start: 4px;
+}
+
+.search-form__fieldset-title {
+  line-height: 22px;
+  padding-block-end: 5px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.search-form__fieldset{
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
 }
 
 /* Кастомный скроллбар */
