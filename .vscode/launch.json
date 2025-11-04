@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "runtimeExecutable": "C:/Users/User/AppData/Local/Yandex/YandexBrowser/Application/browser.exe",
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
